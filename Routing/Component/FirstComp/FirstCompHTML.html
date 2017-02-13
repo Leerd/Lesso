@@ -1,0 +1,5 @@
+<h3>FirstComp</h3>
+<button (click)="look()">Загрузка</button>
+<div *ngIf="url.length">
+    <img *ngFor="let Photo of url" src="{{Photo.url}}">
+</div>

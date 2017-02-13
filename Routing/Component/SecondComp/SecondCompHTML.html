@@ -1,0 +1,8 @@
+<h3>SecondComp</h3>
+
+<input type="text" id="ID" #ID class="form-control" placeholder="ID">
+<button class="add btn btn-default" type="submit" (click)="looks(ID)">Добавить</button>
+
+<div *ngIf="urle.length">
+    <img *ngFor="let Photo of urle" src="{{Photo.url}}">
+</div>
